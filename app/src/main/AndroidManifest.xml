@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".chapter06.MainActivity_chapter06"/>
+        <activity android:name=".chapter06.activity_01context"/>
+        <activity android:name=".chapter06.activity_02sharedPreferences"/>
     </application>
 
 </manifest>
