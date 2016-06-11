@@ -18,6 +18,7 @@
         <activity android:name=".chapter06.MainActivity_chapter06"/>
         <activity android:name=".chapter06.activity_01context"/>
         <activity android:name=".chapter06.activity_02sharedPreferences"/>
+        <activity android:name=".chapter06.activity_03SQLite"/>
     </application>
 
 </manifest>
