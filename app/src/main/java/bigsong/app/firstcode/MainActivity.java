@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (position + 1) {
                     case 6:
                         intent = new Intent(MainActivity.this, MainActivity_chapter06.class);
+                        break;
                         //Toast.makeText(MainActivity.this, data[position], Toast.LENGTH_SHORT).show();
                 }
                 startActivity(intent);

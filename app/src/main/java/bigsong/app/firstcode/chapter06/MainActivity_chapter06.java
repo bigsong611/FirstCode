@@ -31,10 +31,13 @@ public class MainActivity_chapter06 extends AppCompatActivity {
                 switch (position) {
                     case 0:
                         intent = new Intent(MainActivity_chapter06.this, activity_01context.class);
+                        break;
                     case 1:
                         intent = new Intent(MainActivity_chapter06.this,activity_02sharedPreferences.class);
+                        break;
                     case 2:
                         intent = new Intent(MainActivity_chapter06.this,activity_03SQLite.class);
+                        break;
                 }
                 startActivity(intent);
             }
