@@ -37,6 +37,13 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(CREATE_CATEGORY);
+        switch (oldVersion){
+            case 1:
+                db.execSQL(CREATE_CATEGORY);
+            case 2:
+                db.execSQL("alert table Book add column category_di integer");
+            //default 为空，相当于直接跳出switch
+            default:
+        }
     }
 }
