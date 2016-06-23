@@ -14,7 +14,7 @@ import bigsong.app.firstcode.chapter06.db.MyDatabaseHelper;
 /**
  * Created by Jesse on 2016/6/11.
  */
-public class activity_03SQLite extends AppCompatActivity {
+public class SQLiteActivity extends AppCompatActivity {
 
     private MyDatabaseHelper dbHelper;
 

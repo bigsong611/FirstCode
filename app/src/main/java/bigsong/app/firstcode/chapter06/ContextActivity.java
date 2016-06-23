@@ -21,7 +21,7 @@ import bigsong.app.firstcode.R;
 /**
  * Created by Jesse on 2016/6/10.
  */
-public class activity_01context extends AppCompatActivity {
+public class ContextActivity extends AppCompatActivity {
 
     private EditText edit;
 
@@ -34,7 +34,7 @@ public class activity_01context extends AppCompatActivity {
         if (!TextUtils.isEmpty(inputText)){
             edit.setText(inputText);
             edit.setSelection(inputText.length());
-            Toast.makeText(activity_01context.this,"Restoring succeeded",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ContextActivity.this,"Restoring succeeded",Toast.LENGTH_SHORT).show();
         }
     }
 

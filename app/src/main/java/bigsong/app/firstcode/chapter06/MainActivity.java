@@ -13,7 +13,7 @@ import bigsong.app.firstcode.R;
 /**
  * Created by Jesse on 2016/6/10.
  */
-public class MainActivity_chapter06 extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     String[] data = {"1.文件存储", "2.SharedPrefrence存储", "3.数据库存储"};
 
@@ -22,7 +22,7 @@ public class MainActivity_chapter06 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter06_main);
         ListView listView = (ListView) findViewById(R.id.list_main_chapter06);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity_chapter06.this, android.R.layout.simple_list_item_1, data);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, data);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -30,13 +30,13 @@ public class MainActivity_chapter06 extends AppCompatActivity {
                 Intent intent = null;
                 switch (position) {
                     case 0:
-                        intent = new Intent(MainActivity_chapter06.this, activity_01context.class);
+                        intent = new Intent(MainActivity.this, ContextActivity.class);
                         break;
                     case 1:
-                        intent = new Intent(MainActivity_chapter06.this,activity_02sharedPreferences.class);
+                        intent = new Intent(MainActivity.this,SharedPreferencesActivity.class);
                         break;
                     case 2:
-                        intent = new Intent(MainActivity_chapter06.this,activity_03SQLite.class);
+                        intent = new Intent(MainActivity.this,SQLiteActivity.class);
                         break;
                 }
                 startActivity(intent);

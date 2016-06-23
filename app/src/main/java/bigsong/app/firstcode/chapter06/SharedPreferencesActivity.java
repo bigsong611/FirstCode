@@ -12,7 +12,7 @@ import bigsong.app.firstcode.R;
 /**
  * Created by Jesse on 2016/6/11.
  */
-public class activity_02sharedPreferences extends AppCompatActivity {
+public class SharedPreferencesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
