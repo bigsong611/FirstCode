@@ -33,7 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendBroadcastOnClick (View view){
         Intent intent = new Intent("com.example.broadcast.MY_BROADCAST");
-        sendBroadcast(intent);
+//        sendBroadcast(intent);
+        sendOrderedBroadcast(intent, null);
+    }
+
+    public void openLocalBroadCast(View view){
+        startActivity(new Intent(MainActivity.this,LocalBroadCastReceiverActivity.class));
     }
 
     @Override

@@ -19,8 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter05.MainActivity" />
         <activity android:name=".chapter04.MainActivity" />
+        <activity android:name=".chapter05.MainActivity" />
+        <activity android:name=".chapter05.LocalBroadCastReceiverActivity"/>
         <activity android:name=".chapter06.MainActivity" />
         <activity android:name=".chapter06.ContextActivity" />
         <activity android:name=".chapter06.SharedPreferencesActivity" />
@@ -28,11 +29,17 @@
 
         <receiver android:name=".chapter05.BootCompleteReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
         <receiver android:name=".chapter05.MyBroadcastReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="com.example.broadcast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".chapter05.AnotherBroadCsastReceiver">
             <intent-filter>
                 <action android:name="com.example.broadcast.MY_BROADCAST"/>
             </intent-filter>
