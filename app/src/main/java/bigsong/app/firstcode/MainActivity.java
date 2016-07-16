@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String[] data = {"1", "2", "3", "第4章 Fragment", "第5章 广播机制broadcast", "第6章 数据存储方案，详解持久化技术", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
+    private String[] data = {"1", "2", "3", "第4章 Fragment", "第5章 广播机制broadcast", "第6章 数据存储方案，详解持久化技术", "7", "8", "第9章 后台服务 service handler", "10", "11", "12", "13", "14", "15"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 6:
                         intent = new Intent(MainActivity.this, bigsong.app.firstcode.chapter06.MainActivity.class);
+                        break;
+                    case 9:
+                        intent = new Intent(MainActivity.this, bigsong.app.firstcode.chapter09.MainActivity.class);
                         break;
                     //Toast.makeText(MainActivity.this, data[position], Toast.LENGTH_SHORT).show();
                 }
