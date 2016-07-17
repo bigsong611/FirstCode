@@ -21,13 +21,15 @@
         </activity>
         <activity android:name=".chapter04.MainActivity" />
         <activity android:name=".chapter05.MainActivity" />
-        <activity android:name=".chapter05.LocalBroadCastReceiverActivity"/>
+        <activity android:name=".chapter05.LocalBroadCastReceiverActivity" />
         <activity android:name=".chapter06.MainActivity" />
         <activity android:name=".chapter06.ContextActivity" />
         <activity android:name=".chapter06.SharedPreferencesActivity" />
         <activity android:name=".chapter06.SQLiteActivity" />
-        <activity android:name=".chapter09.MainActivity"/>
-        <activity android:name=".chapter09.AnroidThreaTestActivity"/>
+        <activity android:name=".chapter09.MainActivity" />
+        <activity android:name=".chapter09.AnroidThreaTestActivity" />
+
+        <service android:name=".chapter09.MyService" />
 
         <receiver android:name=".chapter05.BootCompleteReceiver">
             <intent-filter>
@@ -43,9 +45,12 @@
 
         <receiver android:name=".chapter05.AnotherBroadCsastReceiver">
             <intent-filter>
-                <action android:name="com.example.broadcast.MY_BROADCAST"/>
+                <action android:name="com.example.broadcast.MY_BROADCAST" />
             </intent-filter>
         </receiver>
+
+        <service android:name=".chapter09.LongRunningService"/>
+        <receiver android:name=".chapter09.AlarmReceiver"/>
     </application>
 
 </manifest>
